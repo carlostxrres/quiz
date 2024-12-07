@@ -87,7 +87,13 @@ onMounted(async () => {
 // It has the current question number, and the total number of questions
 const questionIndex = ref(0)
 const questionCount = computed(() => questions.value.length)
-const progress = computed(() => questionIndex.value / (questionCount.value - 1))
+const progress = computed(() => {
+  if (!questionIndex.value || questionCount.value) {
+    return 0
+  }
+
+  return questionIndex.value / (questionCount.value - 1)
+})
 
 const questionIndexIncrease = () => {
   if (questionIndex.value < questionCount.value) {
