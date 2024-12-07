@@ -16,11 +16,15 @@
             :val="option.id"
             @update:model-value="onOptionSelection"
             :disable="answer.is"
+            :color="answer.is && option.isCorrect ? 'positive' : 'primary'"
+            keep-color
           />
           <!-- To do: disable this when the  -->
         </q-item-section>
         <q-item-section>
-          <q-item-label>{{ option.text }}</q-item-label>
+          <q-item-label :style="{ color: answer.is && option.isCorrect ? 'green' : 'primary' }">{{
+            option.text
+          }}</q-item-label>
           <!-- <q-item-label caption>With description </q-item-label> -->
         </q-item-section>
       </q-item>
