@@ -26,69 +26,71 @@
   </div>
   <QuestionComponent :question="questions[questionIndex]" @answer="handleAnswer" />
 
-  <q-footer class="q-pa-lg bg-white q-pa-lg flex flex-center flex-gap" elevated>
-    <div class="q-mt-md">
-      <q-btn
-        flat
-        round
-        color="primary"
-        icon="first_page"
-        @click="questionIndex = 0"
-        :disabled="questionIndex === 0"
-        dense
-        size="sm"
-      />
+  <q-footer class="q-py-sm q-px-md bg-white flex flex-center flex-gap" elevated>
+    <q-btn
+      flat
+      round
+      color="primary"
+      icon="first_page"
+      @click="questionIndex = 0"
+      :disabled="questionIndex === 0"
+      dense
+      size="sm"
+    />
 
-      <q-btn
-        flat
-        round
-        color="primary"
-        icon="chevron_left"
-        @click="questionIndexDecrease"
-        :disabled="questionIndex === 0"
-        dense
-        size="md"
-      />
+    <q-space />
 
-      <q-btn
-        v-for="offset in paginationOffsets"
-        :key="questionIndex + offset"
-        :label="questionIndex + offset + 1"
-        :disabled="offset === 0"
-        :color="offset === 0 ? 'grey-6' : 'primary'"
-        @click="questionIndexSet(questionIndex + offset)"
-        size="md"
-        padding="sm"
-        flat
-        :class="{
-          'is-answered': questions[questionIndex + offset].answer?.is,
-          'is-correct': questions[questionIndex + offset].answer?.isCorrect,
-        }"
-      />
-      <!-- Each has 3 states: undone, correct, incorrect -->
+    <q-btn
+      flat
+      round
+      color="primary"
+      icon="chevron_left"
+      @click="questionIndexDecrease"
+      :disabled="questionIndex === 0"
+      dense
+      size="md"
+    />
 
-      <q-btn
-        flat
-        round
-        color="primary"
-        icon="chevron_right"
-        @click="questionIndexIncrease"
-        :disabled="questionIndex === questionCount - 1"
-        dense
-        size="md"
-      />
+    <q-btn
+      v-for="offset in paginationOffsets"
+      :key="questionIndex + offset"
+      :label="questionIndex + offset + 1"
+      :disabled="offset === 0"
+      :color="offset === 0 ? 'grey-6' : 'primary'"
+      @click="questionIndexSet(questionIndex + offset)"
+      size="md"
+      padding="sm"
+      flat
+      :class="{
+        'is-answered': questions[questionIndex + offset].answer?.is,
+        'is-correct': questions[questionIndex + offset].answer?.isCorrect,
+      }"
+    />
+    <!-- Each has 3 states: undone, correct, incorrect -->
 
-      <q-btn
-        flat
-        round
-        color="primary"
-        icon="last_page"
-        @click="questionIndex = questionCount - 1"
-        :disabled="questionIndex === questionCount - 1"
-        dense
-        size="sm"
-      />
-    </div>
+    <q-btn
+      flat
+      round
+      color="primary"
+      icon="chevron_right"
+      @click="questionIndexIncrease"
+      :disabled="questionIndex === questionCount - 1"
+      dense
+      size="md"
+    />
+
+    <q-space />
+
+    <q-btn
+      flat
+      round
+      color="primary"
+      icon="last_page"
+      @click="questionIndex = questionCount - 1"
+      :disabled="questionIndex === questionCount - 1"
+      dense
+      size="sm"
+    />
   </q-footer>
 </template>
 
