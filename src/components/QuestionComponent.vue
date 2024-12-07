@@ -30,10 +30,6 @@
       </q-item>
     </q-list>
 
-    <div hidden class="q-px-sm q-mt-sm">
-      Selected answer: <strong>{{ selectedOption }}</strong>
-    </div>
-
     <p
       v-if="question.isSubmitted && question.isSubmittedCorrectly"
       class="q-px-sm q-mt-sm text-grey-8 paragraph"
