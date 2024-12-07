@@ -22,9 +22,10 @@
           <!-- To do: disable this when the  -->
         </q-item-section>
         <q-item-section>
-          <q-item-label :style="{ color: answer.is && option.isCorrect ? 'green' : 'primary' }">{{
-            option.text
-          }}</q-item-label>
+          <q-item-label
+            :style="{ color: answer.is && option.isCorrect ? 'var(--q-positive)' : 'inherit' }"
+            >{{ option.text }}</q-item-label
+          >
           <!-- <q-item-label caption>With description </q-item-label> -->
         </q-item-section>
       </q-item>

@@ -196,11 +196,11 @@ const handleAnswer = (answer) => {
   width: 0.2rem;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: red;
+  background-color: var(--q-negative);
 }
 
 .is-answered.is-correct::after {
-  background-color: #4caf50;
+  background-color: var(--q-positive);
 }
 .progress::after {
   content: '';
