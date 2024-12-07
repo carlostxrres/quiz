@@ -15,8 +15,9 @@
             v-model="selectedOption"
             :val="option.id"
             @update:model-value="onOptionSelection"
-            :disabled:="answer.is"
+            :disable="answer.is"
           />
+          <!-- To do: disable this when the  -->
         </q-item-section>
         <q-item-section>
           <q-item-label>{{ option.text }}</q-item-label>
@@ -92,10 +93,13 @@ const submitAnswer = () => {
     return
   }
 
-  emit('answer', {
+  const newAnswer = {
     is: true,
     isCorrect: selectedOption.value === correctAnswer.id,
-  })
+  }
+  answer.value = newAnswer
+
+  emit('answer', newAnswer)
 }
 </script>
 <style>
