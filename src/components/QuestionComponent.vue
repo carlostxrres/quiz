@@ -1,6 +1,6 @@
 <template>
   <main class="q-px-md">
-    <p class="q-px-md text-weight-bold">{{ question.query }}</p>
+    <p class="q-px-md text-weight-bold question-query">{{ question.query }}</p>
 
     <q-list>
       <q-item
