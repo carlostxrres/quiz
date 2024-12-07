@@ -1,0 +1,1832 @@
+[
+    {
+        "query": "Which of the following is an INCORRECT statement about Scaling, a design principle of Reliability pillar of the AWS Well-Architected Framework.",
+        "options": [
+            {
+                "text": "Fault tolerance is achieved by Horizontal scaling",
+                "isCorrect": false,
+                "id": "10bd1b81-c4a7-565a-86dd-7d63bd09ba60"
+            },
+            {
+                "text": "Horizontal Scaling implies you scale by adding more instances to your existing pool of resources",
+                "isCorrect": false,
+                "id": "ea3eaa45-91a3-5b49-9ade-9dffe7114f6c"
+            },
+            {
+                "text": "Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node",
+                "isCorrect": false,
+                "id": "fa719f73-54bd-5aac-8398-dd5d298b0b69"
+            },
+            {
+                "text": "Fault tolerance is achieved by Vertical Scaling",
+                "isCorrect": true,
+                "id": "60233454-b999-5d39-8694-594be20bef3d"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "2d70a29e-9fb7-580f-a559-4f65090d4362"
+    },
+    {
+        "query": "Which of the following S3 storage classes takes the most time to retrieve data (also known as first byte latency)?",
+        "options": [
+            {
+                "text": "S3 Glacier Deep Archive",
+                "isCorrect": true,
+                "id": "b815e29e-b8c0-5244-9db6-f88fdba4f929"
+            },
+            {
+                "text": "S3 Standard",
+                "isCorrect": false,
+                "id": "9b59a2d2-995c-550f-9d01-d53c49f72993"
+            },
+            {
+                "text": "S3 Glacier",
+                "isCorrect": false,
+                "id": "4fce0a68-ed8b-5267-bee1-7e219b2cac32"
+            },
+            {
+                "text": "S3 Intelligent-Tiering",
+                "isCorrect": false,
+                "id": "b730cc11-5620-5853-b88a-7a89f3aa6e66"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "dd7702cb-43fc-54d2-be25-208952acc55e"
+    },
+    {
+        "query": "AWS Web Application Firewall (WAF) offers protection from common web exploits at which layer?",
+        "options": [
+            {
+                "text": "Layer 3",
+                "isCorrect": false,
+                "id": "154aa5b3-2084-5549-921e-4437878af18d"
+            },
+            {
+                "text": "Layer 4 and 7",
+                "isCorrect": false,
+                "id": "7e98c1cc-d78e-5138-9cb6-c57bf8aacbba"
+            },
+            {
+                "text": "Layer 7",
+                "isCorrect": true,
+                "id": "b7c8b2b1-dc98-5a83-92f0-1c36cdedb192"
+            },
+            {
+                "text": "Layer 4",
+                "isCorrect": false,
+                "id": "d78c375d-4acf-5f7f-9703-690216a03002"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "7cc804dd-2e0b-503c-b07e-2a849428d422"
+    },
+    {
+        "query": "A company runs an application on a fleet of EC2 instances. The company wants to automate the traditional maintenance job of running timely assessments and checking for OS vulnerabilities. As a Cloud Practitioner, which service will you suggest for this use case?",
+        "options": [
+            {
+                "text": "Amazon Inspector",
+                "isCorrect": true,
+                "id": "f88003f0-a87b-5808-aba2-437dae193cf9"
+            },
+            {
+                "text": "Amazon GuardDuty",
+                "isCorrect": false,
+                "id": "960e6e64-ee9e-5203-a631-2f8c57cb82d4"
+            },
+            {
+                "text": "AWS Shield",
+                "isCorrect": false,
+                "id": "fda30279-ddf7-5917-9ed6-4b41ac6e0d1d"
+            },
+            {
+                "text": "Amazon Macie",
+                "isCorrect": false,
+                "id": "72ff0659-90d4-5dd0-bfdc-13ee18c66b30"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "33fb3852-c202-593e-8577-5486714c1c83"
+    },
+    {
+        "query": "A big data analytics company is moving its IT infrastructure from an on-premises data center to AWS Cloud. The company has some server-bound software licenses that it wants to use on AWS. As a Cloud Practitioner, which of the following EC2 instance types would you recommend to the company?",
+        "options": [
+            {
+                "text": "Reserved Instance",
+                "isCorrect": false,
+                "id": "6ab31d78-e125-5935-8b63-6acd4a7c8068"
+            },
+            {
+                "text": "Dedicated Host",
+                "isCorrect": true,
+                "id": "44558672-a731-59e8-b404-5d52a3fd600c"
+            },
+            {
+                "text": "Dedicated Instance",
+                "isCorrect": false,
+                "id": "4fe452bb-6d5d-5cda-8b8b-2e6c5c3f0577"
+            },
+            {
+                "text": "On-Demand Instance",
+                "isCorrect": false,
+                "id": "29ffbad4-31be-5024-9c3d-205f36d65587"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "9a8a56e8-28c7-5b4b-9275-0dda0b3b4540"
+    },
+    {
+        "query": "Which of the following is a serverless AWS service?",
+        "options": [
+            {
+                "text": "Lambda",
+                "isCorrect": true,
+                "id": "38c7e057-9dbd-59a1-aaf6-0423fca70907"
+            },
+            {
+                "text": "EC2",
+                "isCorrect": false,
+                "id": "badcd2ab-0ebe-5776-869b-065d3fa19997"
+            },
+            {
+                "text": "Beanstalk",
+                "isCorrect": false,
+                "id": "0196dfb0-7221-5617-8cf0-caaecd6ae9eb"
+            },
+            {
+                "text": "EMR",
+                "isCorrect": false,
+                "id": "b038d1d5-04b1-5b84-bcdc-c088e232f0b6"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "b686b852-949c-5811-b353-71190cb8a4f9"
+    },
+    {
+        "query": "Which of the following AWS services can be used to connect a company’s on-premises environment to a VPC without using the public internet?",
+        "options": [
+            {
+                "text": "Amazon VPC Endpoint",
+                "isCorrect": false,
+                "id": "adfa90c4-b745-5ed0-8f14-b533d7b00fd5"
+            },
+            {
+                "text": "AWS Direct Connect",
+                "isCorrect": true,
+                "id": "b29d5a5d-97df-51d0-b149-4cb7415c9245"
+            },
+            {
+                "text": "Internet Gateway",
+                "isCorrect": false,
+                "id": "728bdb57-03d5-50a2-bd8b-61066d91bd81"
+            },
+            {
+                "text": "Site-to-Site VPN",
+                "isCorrect": false,
+                "id": "584cbed9-8d71-5962-b6a4-95c150937c08"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "f7da62b8-7e86-5817-a63e-23408fb08580"
+    },
+    {
+        "query": "Which type of Cloud Computing does Amazon Elastic Compute Cloud (EC2) represent?",
+        "options": [
+            {
+                "text": "Infrastructure as a Service (IaaS)",
+                "isCorrect": true,
+                "id": "f5c8074f-d2cb-5bdf-8ce5-bcb40a62c3b2"
+            },
+            {
+                "text": "Network as a Service (NaaS)",
+                "isCorrect": false,
+                "id": "65174010-103b-53cc-86fd-92f510afd04a"
+            },
+            {
+                "text": "Platform as a Service (PaaS)",
+                "isCorrect": false,
+                "id": "7dca0218-149f-59ec-a1ee-c8a80a69ccb8"
+            },
+            {
+                "text": "Software as a Service (SaaS)",
+                "isCorrect": false,
+                "id": "9d73ef33-c85e-5df3-9bcd-9056152cca86"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "045f573c-b3ab-5c5f-9f50-8303d8e6aa9e"
+    },
+    {
+        "query": "A research group wants to use EC2 instances to run a scientific computation application with built-in fault tolerance. The application needs high-performance hardware disks that provide fast I/O performance. As a Cloud Practitioner, which of the following storage options would you recommend as the MOST cost-effective solution?",
+        "options": [
+            {
+                "text": "Instance Store",
+                "isCorrect": true,
+                "id": "eff3b01d-c5f9-552b-96fa-9aeb3af1af3d"
+            },
+            {
+                "text": "EBS",
+                "isCorrect": false,
+                "id": "c81b6fd3-7b03-54b5-812e-85bd938ef671"
+            },
+            {
+                "text": "EFS",
+                "isCorrect": false,
+                "id": "1798167b-d6e7-5ae3-a79b-dcaf935141ad"
+            },
+            {
+                "text": "S3",
+                "isCorrect": false,
+                "id": "b9001051-4c47-51b4-a787-8df18024c27d"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "801ab638-64ea-51dd-af5c-612b23c2e4b2"
+    },
+    {
+        "query": "Which of the following is an AWS database service?",
+        "options": [
+            {
+                "text": "Redshift",
+                "isCorrect": true,
+                "id": "b3e10787-73ed-56ba-b71c-caca2d55b160"
+            },
+            {
+                "text": "Glue",
+                "isCorrect": false,
+                "id": "3b651c60-fa0e-59e9-878a-94bf0ca15787"
+            },
+            {
+                "text": "Storage Gateway",
+                "isCorrect": false,
+                "id": "4bb6a5d8-912e-5dab-afe5-3347037a8178"
+            },
+            {
+                "text": "Database Migration Service",
+                "isCorrect": false,
+                "id": "e38c940b-f41e-5a25-951d-3953b004ea9e"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "f56742ad-b69c-5184-8e4c-8cb97dbc54b8"
+    },
+    {
+        "query": "Which of the following AWS services has encryption enabled by default?",
+        "options": [
+            {
+                "text": "Elastic Block Storage (EBS)",
+                "isCorrect": false,
+                "id": "19ffd1a6-8c03-589d-8571-e7e78147c458"
+            },
+            {
+                "text": "CloudTrail Logs",
+                "isCorrect": true,
+                "id": "4fdfb0ae-fd95-50aa-ab00-7a603837eea7"
+            },
+            {
+                "text": "Amazon S3",
+                "isCorrect": false,
+                "id": "ce2daf25-949f-5183-9555-a58fda585b54"
+            },
+            {
+                "text": "Elastic File Storage (EFS)",
+                "isCorrect": false,
+                "id": "1f5be965-cdb8-5adc-b4fa-65a56cfaef84"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "1b536fe0-3525-57d7-9c86-281df1dad8a7"
+    },
+    {
+        "query": "Which AWS service will help you receive alerts when the reservation utilization falls below the defined threshold?",
+        "options": [
+            {
+                "text": "AWS Simple Monthly Calculator",
+                "isCorrect": false,
+                "id": "ff078f8d-c84e-57df-b103-1ae41a3f6af5"
+            },
+            {
+                "text": "AWS Budgets",
+                "isCorrect": true,
+                "id": "67026fc1-80fa-5122-8e1d-69c22d9de16f"
+            },
+            {
+                "text": "AWS CloudTrail",
+                "isCorrect": false,
+                "id": "25cc0f01-80b4-5ebd-a2cc-ead7a566c9d4"
+            },
+            {
+                "text": "AWS Trusted Advisor",
+                "isCorrect": false,
+                "id": "943d42ca-d96d-5295-9d89-97bcbe054ccf"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "d8b07f94-0464-5b76-9c06-bce6c8e4fa5a"
+    },
+    {
+        "query": "Which AWS services can be used to decouple components of a microservices based application on AWS Cloud? (Select two)",
+        "options": [
+            {
+                "text": "Step Function",
+                "isCorrect": false,
+                "id": "a6edd7ee-0388-54c4-91dd-a045efea6ef6"
+            },
+            {
+                "text": "EC2",
+                "isCorrect": false,
+                "id": "1221db0e-321a-5b0a-98fe-bdf0213aac45"
+            },
+            {
+                "text": "Lambda",
+                "isCorrect": false,
+                "id": "b877530d-8708-53db-b7c8-c5ab0ab9a5ff"
+            },
+            {
+                "text": "SQS",
+                "isCorrect": true,
+                "id": "ab85595d-0c97-514c-9302-817002bd7a76"
+            },
+            {
+                "text": "SNS",
+                "isCorrect": true,
+                "id": "27d516b2-e0df-5fe3-8711-9d29f3a4129b"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "6e683c75-9b88-5b72-95ec-50ef505e91f4"
+    },
+    {
+        "query": "Which of the following are correct statements regarding the AWS Global Infrastructure? (Select two)",
+        "options": [
+            {
+                "text": "Each AWS Region consists of two or more Availability Zones",
+                "isCorrect": true,
+                "id": "3dbb5fd6-34e5-5e0c-9313-ad76925cf441"
+            },
+            {
+                "text": "Each Availability Zone (AZ) consists of two or more discrete data centers",
+                "isCorrect": false,
+                "id": "b5b9e447-85da-54c9-a921-b8c40713d804"
+            },
+            {
+                "text": "Each Availability Zone (AZ) consists of one or more discrete data centers",
+                "isCorrect": true,
+                "id": "a79b472a-07ee-5712-94bb-933f45242a9a"
+            },
+            {
+                "text": "Each AWS Region consists of two or more Edge Locations",
+                "isCorrect": false,
+                "id": "6c321a9a-71c1-5d08-8a36-546f987e8cdd"
+            },
+            {
+                "text": "Each AWS Region consists of one or more Availability Zones",
+                "isCorrect": false,
+                "id": "298b4020-c67d-5631-92ab-1fd2bc0f638d"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "62425809-444f-5325-9221-9e6f49c6fad0"
+    },
+    {
+        "query": "A unicorn startup is building an analytics application with support for a speech-based interface. The application will accept speech-based input from users and then convey results via speech. As a Cloud Practitioner, which solution would you recommend for the given use-case?",
+        "options": [
+            {
+                "text": "Use Amazon Transcribe to convert speech to text for downstream analysis. Then use Amazon Polly to convey the text results via speech",
+                "isCorrect": true,
+                "id": "7e36320c-f858-52b1-b668-846e3264abb0"
+            },
+            {
+                "text": "Use Amazon Polly to convert speech to text for downstream analysis. Then use Amazon Transcribe to convey the text results via speech",
+                "isCorrect": false,
+                "id": "6081cdb6-eead-5f7d-957b-48eee30dc582"
+            },
+            {
+                "text": "Use Amazon Translate to convert speech to text for downstream analysis. Then use Amazon Polly to convey the text results via speech",
+                "isCorrect": false,
+                "id": "345c6082-1d0b-5852-9f3e-52219384a411"
+            },
+            {
+                "text": "Use Amazon Polly to convert speech to text for downstream analysis. Then use Amazon Translate to convey the text results via speech",
+                "isCorrect": false,
+                "id": "2cb77e2b-983d-5697-aff0-154bb5df26c7"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "0b7312aa-c9b4-58f8-9eb4-85f823a39714"
+    },
+    {
+        "query": "As per AWS shared responsibility model, which of the following is a responsibility of the customer from a security and compliance point of view?",
+        "options": [
+            {
+                "text": "Edge Location management and maintenance",
+                "isCorrect": false,
+                "id": "eb198b6a-99e5-55ed-8283-87cf3a56555f"
+            },
+            {
+                "text": "Patching/fixing flaws within the AWS infrastructure",
+                "isCorrect": false,
+                "id": "d57d32d8-b3ad-5d06-be21-2b7a9a53e8fa"
+            },
+            {
+                "text": "Availability Zone infrastructure management",
+                "isCorrect": false,
+                "id": "0960e373-d799-557a-96c7-a50a07f1643c"
+            },
+            {
+                "text": "Manage Elastic Block Store (EBS) backups using EBS snapshots",
+                "isCorrect": true,
+                "id": "cb4ae5e6-a21c-50bd-a3f4-6fd2a1255f5c"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "7a033888-19de-530b-9b34-60fa19aaa035"
+    },
+    {
+        "query": "Which of the following is CORRECT regarding removing an AWS account from AWS Organizations?",
+        "options": [
+            {
+                "text": "Raise a support ticket with AWS Support to remove the account",
+                "isCorrect": false,
+                "id": "d9499e90-b178-5163-939c-24f08350edb9"
+            },
+            {
+                "text": "The AWS account must be able to operate as a standalone account. Only then it can be removed from AWS organizations",
+                "isCorrect": true,
+                "id": "289b7b4a-2a62-51d7-8d4d-c58ce1c66f4e"
+            },
+            {
+                "text": "The AWS account can be removed from AWS Systems Manager",
+                "isCorrect": false,
+                "id": "1cff2f58-5f53-51af-8232-387150f2d57c"
+            },
+            {
+                "text": "The AWS account must not have any Service Control Policies (SCPs) attached to it. Only then it can be removed from AWS organizations",
+                "isCorrect": false,
+                "id": "cbd9471d-c966-5b2d-9ced-9167a739ba8c"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "9b34017b-e71a-54e0-8bf9-78e2aaf892c9"
+    },
+    {
+        "query": "A multi-national corporation wants to get expert professional advice on migrating to AWS and managing their applications on AWS Cloud. Which of the following entities would you recommend for this engagement?",
+        "options": [
+            {
+                "text": "APN Technology Partner",
+                "isCorrect": false,
+                "id": "e2685327-55f5-5b03-aa8a-6b5467be62d6"
+            },
+            {
+                "text": "Concierge Support Team",
+                "isCorrect": false,
+                "id": "5628fafd-51dc-53a1-b772-7fb51eac64c3"
+            },
+            {
+                "text": "APN Consulting Partner",
+                "isCorrect": true,
+                "id": "d8395949-8662-5d71-8d40-a0af7d4cd105"
+            },
+            {
+                "text": "AWS Trusted Advisor",
+                "isCorrect": false,
+                "id": "2452719d-6d6c-5b3d-80ca-cef95808db8b"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "3471b909-0b11-540e-a0b2-b452e82c697d"
+    },
+    {
+        "query": "A startup wants to migrate its data and applications from the on-premises data center to AWS Cloud. Which of the following options can be used by the startup to help with this migration? (Select two)",
+        "options": [
+            {
+                "text": "Use AWS Trusted Advisor to automate the infrastructure migration",
+                "isCorrect": false,
+                "id": "68613ecf-144e-5378-9864-0dfdf57bdb19"
+            },
+            {
+                "text": "Leverage AWS Professional Services and set up AWS Landing Zone to accelerate the infrastructure migration",
+                "isCorrect": true,
+                "id": "84c31293-5172-5169-9f3d-edbbc3005c62"
+            },
+            {
+                "text": "Consult moderators on AWS Developer Forums",
+                "isCorrect": false,
+                "id": "bbd4d611-fb9c-5c24-8781-838c2ba82f22"
+            },
+            {
+                "text": "Raise a support ticket with AWS Support for further assistance",
+                "isCorrect": false,
+                "id": "b531d3ec-fa9b-55a1-864e-a7aa8bede5cc"
+            },
+            {
+                "text": "Utilize AWS Partner Network (APN) to build a custom solution for this infrastructure migration",
+                "isCorrect": true,
+                "id": "341e5efd-e497-5152-9dd3-2ae868d833fc"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "52d2e1d3-523a-5a23-8152-9a31ba6f9bbd"
+    },
+    {
+        "query": "A financial services company wants to ensure that its AWS account activity meets the governance, compliance and auditing norms. As a Cloud Practitioner, which AWS service would you recommend for this use-case?",
+        "options": [
+            {
+                "text": "CloudWatch",
+                "isCorrect": false,
+                "id": "60cbd484-38dd-5261-a94c-aaa9f7cf9a7d"
+            },
+            {
+                "text": "Config",
+                "isCorrect": false,
+                "id": "8867446a-049a-590f-8e14-632e6758c6f7"
+            },
+            {
+                "text": "Trusted Advisor",
+                "isCorrect": false,
+                "id": "86b36f7a-af33-506e-ac60-7fd4f51e7622"
+            },
+            {
+                "text": "CloudTrail",
+                "isCorrect": true,
+                "id": "5026b651-a29c-5dbf-8228-594f2d8af488"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "7e76fe91-60e2-5def-ab5a-11bcd2dde0d1"
+    },
+    {
+        "query": "Which of the following represents a serverless stack on AWS Cloud?",
+        "options": [
+            {
+                "text": "Step Function, DynamoDB, EC2",
+                "isCorrect": false,
+                "id": "0e286812-2796-5093-b8b9-de0942c3d1dd"
+            },
+            {
+                "text": "Step Function, DynamoDB, Lambda",
+                "isCorrect": true,
+                "id": "1e2d7dda-7fbb-5d5e-b45e-ca75b0d03b6d"
+            },
+            {
+                "text": "EMR, DynamoDB, Lambda",
+                "isCorrect": false,
+                "id": "ce0bd92a-84be-5799-bc28-382158a32ff8"
+            },
+            {
+                "text": "EC2, DynamoDB, Lambda",
+                "isCorrect": false,
+                "id": "659f96d5-727a-536a-8c37-83922a5d035b"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "0f496d83-db1d-5541-b85c-1be5d72ddf47"
+    },
+    {
+        "query": "Which of the following AWS services should be used to automatically distribute incoming traffic across multiple targets?",
+        "options": [
+            {
+                "text": "Amazon Elasticsearch",
+                "isCorrect": false,
+                "id": "a5aacfd3-11c2-5475-9a36-22ee026f1b34"
+            },
+            {
+                "text": "AWS Elastic Beanstalk",
+                "isCorrect": false,
+                "id": "c081d8ea-938f-5b8f-8a69-3d885be693f6"
+            },
+            {
+                "text": "AWS Elastic Load Balancing",
+                "isCorrect": true,
+                "id": "7c8bda52-b959-561b-b9dd-26efbdb36480"
+            },
+            {
+                "text": "AWS Auto Scaling",
+                "isCorrect": false,
+                "id": "71e891ca-7dd6-5cb8-9853-b11a8ac85862"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "9824b3bb-a246-5f4a-979b-3b98a25d72ad"
+    },
+    {
+        "query": "Which of the following is the MOST cost-effective option to purchase an EC2 Reserved Instance?",
+        "options": [
+            {
+                "text": "Partial upfront payment option with standard 3-years term",
+                "isCorrect": true,
+                "id": "3700ad5b-54b1-5eeb-9045-8bf8e8dbd36d"
+            },
+            {
+                "text": "No upfront payment option with standard 1-year term",
+                "isCorrect": false,
+                "id": "507cca5a-3787-515d-8034-87940a12bd8a"
+            },
+            {
+                "text": "No upfront payment option with standard 3-years term",
+                "isCorrect": false,
+                "id": "def91d08-fc39-5ada-8170-c4ca828cb490"
+            },
+            {
+                "text": "All upfront payment option with standard 1-year term",
+                "isCorrect": false,
+                "id": "25a9377b-1421-5cf4-a02f-ae0f60bba458"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "4f04dcc9-d62a-5c3c-9769-8051aabfffaf"
+    },
+    {
+        "query": "Which of the following are the storage services offered by the AWS Cloud? (Select two)",
+        "options": [
+            {
+                "text": "SNS",
+                "isCorrect": false,
+                "id": "f64a9af8-afff-53fb-a265-e92e3147750c"
+            },
+            {
+                "text": "S3",
+                "isCorrect": true,
+                "id": "1a4f2675-f66b-555f-bd5e-3ecf5aac9379"
+            },
+            {
+                "text": "EC2",
+                "isCorrect": false,
+                "id": "79f431cc-36d2-5032-b574-16d6ff1b2d36"
+            },
+            {
+                "text": "EFS",
+                "isCorrect": true,
+                "id": "46fceb38-f143-55c1-b7d4-6460ec260dc1"
+            },
+            {
+                "text": "SQS",
+                "isCorrect": false,
+                "id": "d95cf517-1002-50ef-a5bb-93400f462ce4"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "f1df9e79-a0e9-56cf-99f6-79af03a5b798"
+    },
+    {
+        "query": "AWS Shield Advanced provides expanded DDoS attack protection for web applications running on which of the following resources? (Select two)",
+        "options": [
+            {
+                "text": "AWS Global Accelerator",
+                "isCorrect": true,
+                "id": "d35c88e4-b17a-55d5-9034-60bb51b42d85"
+            },
+            {
+                "text": "AWS Elastic Beanstalk",
+                "isCorrect": false,
+                "id": "1ead0bd4-2ac6-55a9-9fb2-eb6ffac600fe"
+            },
+            {
+                "text": "AWS CloudFormation",
+                "isCorrect": false,
+                "id": "1822c1da-d061-5fc4-a297-38ba46dc4eab"
+            },
+            {
+                "text": "Amazon Route 53",
+                "isCorrect": true,
+                "id": "cf0d1601-adb1-5116-b3a4-fbe723b76703"
+            },
+            {
+                "text": "Amazon API Gateway",
+                "isCorrect": false,
+                "id": "c9ca7f3a-93d9-5d8f-9ba7-cf8bb26c2ad6"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "5e800c9c-73d4-5359-a2a6-03a7476bba57"
+    },
+    {
+        "query": "Which of the following is a hybrid storage service that allows on-premises applications to access data on AWS Cloud?",
+        "options": [
+            {
+                "text": "Amazon EBS",
+                "isCorrect": false,
+                "id": "13b55c08-86d6-558e-a96e-811d6e5a391f"
+            },
+            {
+                "text": "AWS Storage Gateway",
+                "isCorrect": true,
+                "id": "2307e1bf-9cb2-53bb-82a6-d43b386d39df"
+            },
+            {
+                "text": "AWS Snowball",
+                "isCorrect": false,
+                "id": "c4bc8e5d-bc70-5283-813d-63de87c8763e"
+            },
+            {
+                "text": "AWS Direct Connect",
+                "isCorrect": false,
+                "id": "f04e53e1-6bbc-550d-9741-ebec690ce8bf"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "e5ad1696-44d9-5993-a6a2-5a2d8251f7a8"
+    },
+    {
+        "query": "Under the AWS Shared Responsibility Model, which of the following is a shared responsibility of both AWS and the customer?",
+        "options": [
+            {
+                "text": "Configuration Management",
+                "isCorrect": true,
+                "id": "fd13a850-f78c-5f92-b59b-93d92f30dc6c"
+            },
+            {
+                "text": "Guarentee data separation among various AWS customers",
+                "isCorrect": false,
+                "id": "d8c54927-16c9-5845-a030-93744df57454"
+            },
+            {
+                "text": "Infrastructure maintenance of Amazon S3 storage servers",
+                "isCorrect": false,
+                "id": "37c796f6-212b-51c6-bbb1-4605336ad91c"
+            },
+            {
+                "text": "Availability Zone infrastructure maintenance",
+                "isCorrect": false,
+                "id": "961bd9a3-55c2-5db7-af3f-a6a3df7e531b"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "5057cb09-52cd-5af5-9183-fd677b63c2db"
+    },
+    {
+        "query": "Which of the following statements are CORRECT regarding the Availability Zone (AZ) specific characteristics of EBS and EFS storage types?",
+        "options": [
+            {
+                "text": "EBS volume can be attached to a single instance in the same Availability Zone and EFS file system can be mounted on instances in the same Availability Zone",
+                "isCorrect": false,
+                "id": "eb4cc2a6-cd18-578a-a0c3-f1ba29f2602d"
+            },
+            {
+                "text": "EBS volume can be attached to instances in multiple Availability Zones and EFS file system can be mounted on instances in the same Availability Zone",
+                "isCorrect": false,
+                "id": "1c300a2a-95be-592f-8213-d60073c78c2d"
+            },
+            {
+                "text": "EBS volume can be attached to a single instance in the same Availability Zone whereas EFS file system can be mounted on instances across multiple Availability Zones",
+                "isCorrect": true,
+                "id": "79c1c610-3d15-5cbb-bab3-de93ac966732"
+            },
+            {
+                "text": "EBS volume can be attached to instances in multiple Availability Zones and EFS file system can be mounted on instances across multiple Availability Zones",
+                "isCorrect": false,
+                "id": "39302a67-0ce5-56b1-b837-e0dad4576f5e"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "2528ab5e-2b79-5bcf-b739-48d5b07b01de"
+    },
+    {
+        "query": "Which AWS services can be used to facilitate organizational change management, part of the Reliability pillar of AWS Well-Architected Framework (Select 2)?",
+        "options": [
+            {
+                "text": "AWS CloudTrail",
+                "isCorrect": true,
+                "id": "f417ad8d-8e32-5034-8c6c-880205e62b56"
+            },
+            {
+                "text": "Amazon Inspector",
+                "isCorrect": false,
+                "id": "696f304b-90f4-5fe6-bcb7-be6616e18b67"
+            },
+            {
+                "text": "AWS Trusted Advisor",
+                "isCorrect": false,
+                "id": "fba8a7e2-ffc1-52eb-be5f-27c34fc466b2"
+            },
+            {
+                "text": "AWS Config",
+                "isCorrect": true,
+                "id": "b2539525-be64-5b91-9c16-40433ff33ea9"
+            },
+            {
+                "text": "Amazon CloudWatch",
+                "isCorrect": false,
+                "id": "1c162a37-4376-53a4-b4bc-d76ae151fb18"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "9a53d945-4a23-5921-94bc-ae581c343177"
+    },
+    {
+        "query": "A company wants to have control over creating and using its own keys for encryption on AWS services. Which of the following can be used for this use-case?",
+        "options": [
+            {
+                "text": "Secrets Manager",
+                "isCorrect": false,
+                "id": "9345a8e1-4382-560e-bb4b-7f18fcb6d915"
+            },
+            {
+                "text": "Customer Managed CMK",
+                "isCorrect": true,
+                "id": "1d83cc02-229b-5149-81a6-3d9b31941e8e"
+            },
+            {
+                "text": "AWS Managed CMK",
+                "isCorrect": false,
+                "id": "45a2fed4-58ae-50a8-afcd-9ab4a6866922"
+            },
+            {
+                "text": "AWS Owned CMK",
+                "isCorrect": false,
+                "id": "1b6c7c47-06b4-5aee-a197-0a658a600931"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "4cbe2d45-158d-5fe7-a3b5-1fcf5a5a0512"
+    },
+    {
+        "query": "Compared to the On-demand prices, what is the highest possible discount offered for spot instances?",
+        "options": [
+            {
+                "text": "75",
+                "isCorrect": false,
+                "id": "c7dfa927-f79b-5827-8860-62fb868d3ae8"
+            },
+            {
+                "text": "10",
+                "isCorrect": false,
+                "id": "f2de1291-b68d-508e-9e17-0fa51a0d2311"
+            },
+            {
+                "text": "50",
+                "isCorrect": false,
+                "id": "6a53d9f4-ec66-53c6-a497-ba262ffb2039"
+            },
+            {
+                "text": "90",
+                "isCorrect": true,
+                "id": "de912afd-fb70-570c-b776-f88bf2aa62ac"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "d1bdb740-3f91-5dfa-b37a-7c801733eeed"
+    },
+    {
+        "query": "A multi-national company has just moved its infrastructure from its on-premises data center to AWS Cloud. As part of the shared responsibility model, AWS is responsible for which of the following?",
+        "options": [
+            {
+                "text": "Service and Communications Protection or Zone Security",
+                "isCorrect": false,
+                "id": "c6c4151a-1680-5739-a342-b53c1c26e2c3"
+            },
+            {
+                "text": "Patching guest OS",
+                "isCorrect": false,
+                "id": "2bb43dd3-19ce-560a-8489-58d455a635df"
+            },
+            {
+                "text": "Configuring customer applications",
+                "isCorrect": false,
+                "id": "138a2581-95e1-5688-8b8a-a16738c1c08f"
+            },
+            {
+                "text": "Physical and Environmental controls",
+                "isCorrect": true,
+                "id": "8bf62dbf-d3bd-5632-8a28-76575714a11f"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "59b2ac31-df03-5b9a-8e12-bf44401ee746"
+    },
+    {
+        "query": "Which of the following AWS services support reservations to optimize costs? (Select three)",
+        "options": [
+            {
+                "text": "Lambda",
+                "isCorrect": false,
+                "id": "0f0783ed-2474-58dc-bef0-b3efa2d1c25a"
+            },
+            {
+                "text": "EC2 Instances",
+                "isCorrect": true,
+                "id": "a3f1deba-7a15-5b2b-9fc7-32d031884aef"
+            },
+            {
+                "text": "S3",
+                "isCorrect": false,
+                "id": "5829ca65-8fde-51b2-a96c-47749ad456ba"
+            },
+            {
+                "text": "RDS",
+                "isCorrect": true,
+                "id": "a03849b4-b8b1-5bc9-953a-95b7f3650497"
+            },
+            {
+                "text": "DynamoDB",
+                "isCorrect": true,
+                "id": "6c211fac-e509-5a52-b5fc-79e698382959"
+            },
+            {
+                "text": "DocumentDB",
+                "isCorrect": false,
+                "id": "93f3d47d-d19b-5ba3-9ed6-ad494694b784"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "27e7c48f-b161-5410-90b8-f98e1375d642"
+    },
+    {
+        "query": "A company uses reserved EC2 instances across multiple units with each unit having its own AWS account. However, some of the units under-utilize their reserved instances while other units need more reserved instances. As a Cloud Practitioner, which of the following would you recommend as the most cost-optimal solution?",
+        "options": [
+            {
+                "text": "Use AWS Systems Manager to manage AWS accounts of all units and then share the reserved EC2 instances amongst all units",
+                "isCorrect": false,
+                "id": "9bbd4878-aa7e-5061-ad22-ae29069f61e9"
+            },
+            {
+                "text": "Use AWS Cost Explorer to manage AWS accounts of all units and then share the reserved EC2 instances amongst all units",
+                "isCorrect": false,
+                "id": "df1a97a8-2a80-5541-ace1-dcc35dc71f86"
+            },
+            {
+                "text": "Use AWS Organizations to manage AWS accounts of all units and then share the reserved EC2 instances amongst all units",
+                "isCorrect": true,
+                "id": "fddcd52b-8a3a-51dd-9571-e78672ad6210"
+            },
+            {
+                "text": "Use AWS Trusted Advisor to manage AWS accounts of all units and then share the reserved EC2 instances amongst all units",
+                "isCorrect": false,
+                "id": "54db4ea4-f29e-5ed6-9756-1ddd6814dc48"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "4ce74d17-6a80-5ef3-9f17-6e6abffb44c9"
+    },
+    {
+        "query": "A company needs a storage solution for a project wherein the data is accessed less frequently but needs rapid access when required. Which S3 storage class is the MOST cost-effective for the given use-case?",
+        "options": [
+            {
+                "text": "Amazon S3 Standard",
+                "isCorrect": false,
+                "id": "71fba6aa-7d90-5c67-8175-98bdc47e846f"
+            },
+            {
+                "text": "Amazon S3 Standard-Infrequent Access (S3 Standard-IA)",
+                "isCorrect": true,
+                "id": "f94a0f9f-65e9-557b-aa17-b0350db37883"
+            },
+            {
+                "text": "Amazon S3 Glacier (S3 Glacier)",
+                "isCorrect": false,
+                "id": "b81e0e88-cf68-5433-86a3-fb784b2d29b0"
+            },
+            {
+                "text": "Amazon S3 Intelligent-Tiering (S3 Intelligent-Tiering)",
+                "isCorrect": false,
+                "id": "f6b0b1e9-0363-5bf8-8b83-c5103cfd7851"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "f3b5988e-0293-5a4e-b8f1-3da5e93be2e1"
+    },
+    {
+        "query": "The DevOps team at an e-commerce company is trying to debug performance issues for its serverless application built using a microservices architecture. As a Cloud Practitioner, which AWS service would you recommend addressing this use-case?",
+        "options": [
+            {
+                "text": "AWS CloudFormation",
+                "isCorrect": false,
+                "id": "179df365-bbe2-5dd3-be58-303caaf907a1"
+            },
+            {
+                "text": "AWS Trusted Advisor",
+                "isCorrect": false,
+                "id": "d2707a11-aae4-5895-80c0-c419b2e3c1f2"
+            },
+            {
+                "text": "AWS X-Ray",
+                "isCorrect": true,
+                "id": "370b1818-1b47-50c7-9c96-12d487998638"
+            },
+            {
+                "text": "Amazon Pinpoint",
+                "isCorrect": false,
+                "id": "802776aa-bb5c-5278-bd78-58b99444f9fa"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "1fec4579-bb44-50a7-b81c-5d9a4a697666"
+    },
+    {
+        "query": "A medical research startup wants to understand the compliance of AWS services concerning HIPAA guidelines. Which AWS service can be used to review the HIPAA compliance and governance-related documents on AWS?",
+        "options": [
+            {
+                "text": "AWS Artifact",
+                "isCorrect": true,
+                "id": "d602dbed-44c3-5d76-aaeb-af677b160c91"
+            },
+            {
+                "text": "AWS Trusted Advisor",
+                "isCorrect": false,
+                "id": "d3963651-33c8-5f73-bb9a-4e4ee78d2a04"
+            },
+            {
+                "text": "AWS Systems Manager",
+                "isCorrect": false,
+                "id": "2fe0cab6-7b0b-52a0-93e0-5a8558c57734"
+            },
+            {
+                "text": "AWS Secrets Manager",
+                "isCorrect": false,
+                "id": "77425af4-6f29-5fdc-b788-8d36e5da806a"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "b669597f-e75a-5506-a511-8d4dfb453b89"
+    },
+    {
+        "query": "Which security service of AWS is enabled for all AWS customers, by default, at no additional cost?",
+        "options": [
+            {
+                "text": "AWS Shield Advanced",
+                "isCorrect": false,
+                "id": "39ab8952-a1f2-59bc-b4b7-027de31c9d3e"
+            },
+            {
+                "text": "AWS Web Application Firewall (AWS WAF)",
+                "isCorrect": false,
+                "id": "183bb7cf-b76f-547c-9528-9940bf8e6390"
+            },
+            {
+                "text": "AWS Shield Standard",
+                "isCorrect": true,
+                "id": "dc5b7b91-768f-5a4e-909f-777c8dbb6666"
+            },
+            {
+                "text": "AWS Secrets Manager",
+                "isCorrect": false,
+                "id": "220e47da-0490-5154-975d-6d6b25eddbee"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "91921181-a0d3-5819-90ef-262f6b2bdec2"
+    },
+    {
+        "query": "A data analytics company is running a proprietary batch analytics application on AWS and wants to use a storage service which would be accessed by hundreds of EC2 instances simultaneously to append data to existing files. As a Cloud Practitioner, which AWS service would you suggest for this use-case?",
+        "options": [
+            {
+                "text": "Instance Store",
+                "isCorrect": false,
+                "id": "48e72299-cd72-5d27-a7f8-72d885a5cbf4"
+            },
+            {
+                "text": "EFS",
+                "isCorrect": true,
+                "id": "e7ca8359-4a18-54b5-ae31-581eb59bb5e3"
+            },
+            {
+                "text": "EBS",
+                "isCorrect": false,
+                "id": "09b57f7b-a09d-512f-9757-a574d0ef49e0"
+            },
+            {
+                "text": "S3",
+                "isCorrect": false,
+                "id": "a1bb7a80-bb34-57ed-b590-6ba77caf49ad"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "3ca98238-a9be-5319-b484-7d4d10c0dc77"
+    },
+    {
+        "query": "An IT company is planning to migrate from an on-premises environment to AWS Cloud. Which of the following expense areas would result in cost savings when the company moves to AWS Cloud? (Select two)",
+        "options": [
+            {
+                "text": "Data center physical security expenditure",
+                "isCorrect": true,
+                "id": "d35f240a-1c8c-5b02-b132-c22d77990e1b"
+            },
+            {
+                "text": "Computing hardware infrastructure expenditure",
+                "isCorrect": true,
+                "id": "39bfef78-1377-5a99-95a8-746df7376d70"
+            },
+            {
+                "text": "Developer salary",
+                "isCorrect": false,
+                "id": "3151d2d6-50c9-51bc-85fc-834c597ae8f8"
+            },
+            {
+                "text": "Project manager salary",
+                "isCorrect": false,
+                "id": "3c0060cb-0799-53ed-bde4-727f3d130222"
+            },
+            {
+                "text": "SaaS application license fee",
+                "isCorrect": false,
+                "id": "963b2aa6-1214-5f72-bc71-d2b9c694dd4b"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "65c026a5-2d9f-5ea7-b9b4-4b33351f9a2d"
+    },
+    {
+        "query": "Which of the following AWS Support plans provides access to online training with self-paced labs?",
+        "options": [
+            {
+                "text": "Basic",
+                "isCorrect": false,
+                "id": "f4f2f443-9e88-5d87-993d-70ef21b5633b"
+            },
+            {
+                "text": "Enterprise",
+                "isCorrect": true,
+                "id": "f596d98d-1969-5a05-8eed-e37d8f344167"
+            },
+            {
+                "text": "Business",
+                "isCorrect": false,
+                "id": "2220918d-e990-5c51-a827-9d5d009505d4"
+            },
+            {
+                "text": "Developer",
+                "isCorrect": false,
+                "id": "856a83a5-ca7a-5438-b340-cd1a1e592c84"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "23997a40-1911-579d-9e3e-3cc47c9e444c"
+    },
+    {
+        "query": "Which of the following is a recommended way to provide programmatic access to AWS resources?",
+        "options": [
+            {
+                "text": "Create a new IAM user and share the username and password",
+                "isCorrect": false,
+                "id": "7c045970-854b-5a53-bbcb-b73c73b147a1"
+            },
+            {
+                "text": "Use Access Key ID and Secret Access Key to access AWS resources programmatically",
+                "isCorrect": true,
+                "id": "020c6204-ea85-52a0-a280-d40674543308"
+            },
+            {
+                "text": "Use IAM groups to access AWS resources programmatically",
+                "isCorrect": false,
+                "id": "5c86138f-92b7-5992-8a1e-8a0d9d3b96ae"
+            },
+            {
+                "text": "Use Multi Factor Authentication to access AWS resources programmatically",
+                "isCorrect": false,
+                "id": "38a4d98c-7ddf-5338-9cb4-a369f737a0b1"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "6b16a1ac-1ab7-5fe0-85a9-0c06437c2eab"
+    },
+    {
+        "query": "Which of the following AWS services support VPC Endpoint Gateway for a private connection from a VPC? (Select two)",
+        "options": [
+            {
+                "text": "S3",
+                "isCorrect": true,
+                "id": "2f49ab25-3caa-59d5-8baf-3f55e1491cda"
+            },
+            {
+                "text": "Amazon SNS",
+                "isCorrect": false,
+                "id": "0ba9defa-65d3-52ef-b05d-0e41844484ff"
+            },
+            {
+                "text": "DynamoDB",
+                "isCorrect": true,
+                "id": "ae48055a-639f-57f9-8b5c-3da71380f61a"
+            },
+            {
+                "text": "Amazon SQS",
+                "isCorrect": false,
+                "id": "277fc9d8-8682-5d40-9943-14ccb4477776"
+            },
+            {
+                "text": "Amazon EC2",
+                "isCorrect": false,
+                "id": "b08ef4d2-f896-5478-9a29-906e0b53acae"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "0668a833-2437-5f4e-9be0-ec93b4cf49b8"
+    },
+    {
+        "query": "A startup wants to set up its IT infrastructure on AWS Cloud. The CTO would like to get an estimate of the monthly AWS bill based on the AWS services that the startup wants to use. As a Cloud Practitioner, which AWS service would you suggest for this use-case?",
+        "options": [
+            {
+                "text": "AWS Cost Explorer",
+                "isCorrect": false,
+                "id": "3b356ea9-bd23-57e6-92be-e598b2a2e503"
+            },
+            {
+                "text": "AWS Budgets",
+                "isCorrect": false,
+                "id": "627184b1-7ea7-50a4-8810-7e4dc4d9ee38"
+            },
+            {
+                "text": "AWS Total Cost of Ownership (TCO) Calculator",
+                "isCorrect": false,
+                "id": "5978bd7e-5379-5c29-b0dc-ff56190159c0"
+            },
+            {
+                "text": "AWS Simple Monthly Calculator",
+                "isCorrect": true,
+                "id": "81f1fa04-60e5-53d2-bae6-f66b6a76fc43"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "fcae3a63-76dc-5cc4-bbe8-11df9507cbde"
+    },
+    {
+        "query": "Which of the following statements are CORRECT regarding the AWS VPC service? (Select two)",
+        "options": [
+            {
+                "text": "A NAT Instance is managed by AWS",
+                "isCorrect": false,
+                "id": "059a43cf-95af-52eb-ad22-a9a05295c2de"
+            },
+            {
+                "text": "A NAT Gateway is managed by AWS",
+                "isCorrect": true,
+                "id": "28070d64-bbea-5e66-9a02-874435ba58f8"
+            },
+            {
+                "text": "A NACL can have allow rules only",
+                "isCorrect": false,
+                "id": "dc01f487-a579-5df9-9626-a800de5024ef"
+            },
+            {
+                "text": "A Security Group can have both allow and deny rules",
+                "isCorrect": false,
+                "id": "19eeeb95-c0b4-53e0-a1d9-788abd7b378e"
+            },
+            {
+                "text": "A Security Group can have allow rules only",
+                "isCorrect": true,
+                "id": "2b989450-168c-5cea-80bb-6d85e67c7ea7"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "7c9cd66a-811f-50b8-8fa4-d94cbdf06bfb"
+    },
+    {
+        "query": "Which of the following are the advantages of Cloud Computing? (Select three)",
+        "options": [
+            {
+                "text": "Trade capital expense for variable expense",
+                "isCorrect": true,
+                "id": "c28aaed4-754b-58c9-bd59-40fba70198e4"
+            },
+            {
+                "text": "Trade variable expense for capital expense",
+                "isCorrect": false,
+                "id": "01c83307-bf21-5ec6-813b-10929911a56d"
+            },
+            {
+                "text": "Allocate a few months of planning for your infrastructure capacity needs",
+                "isCorrect": false,
+                "id": "ce2c6874-9ade-5822-8545-8704d1c5ea51"
+            },
+            {
+                "text": "Go global in minutes and deploy applications in multiple regions around the world with just a few clicks",
+                "isCorrect": true,
+                "id": "0621cede-676a-5c33-be10-8f5bb8dd4067"
+            },
+            {
+                "text": "Spend money on building and maintaining data centers",
+                "isCorrect": false,
+                "id": "ef407ec4-6d5f-5a27-aa05-31567e17af95"
+            },
+            {
+                "text": "Benefit from massive economies of scale",
+                "isCorrect": true,
+                "id": "247b5834-e7d4-5223-8e38-3b129ce8f851"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "e2116348-8176-5528-b2d9-8a9bc352e53a"
+    },
+    {
+        "query": "A startup wants to provision an EC2 instance for the lowest possible cost for a long-term duration but needs to make sure that the instance would never be interrupted. As a Cloud Practitioner, which of the following options would you recommend?",
+        "options": [
+            {
+                "text": "Reserved Instance",
+                "isCorrect": true,
+                "id": "12913389-da61-5907-baaf-e2db0d06e81e"
+            },
+            {
+                "text": "Dedicated Host",
+                "isCorrect": false,
+                "id": "b4cb341a-6c43-5028-ac53-15e81b41cd0a"
+            },
+            {
+                "text": "Spot Instance",
+                "isCorrect": false,
+                "id": "8ccf1dc3-afc1-5f5e-88e5-69a7399587f7"
+            },
+            {
+                "text": "On-Demand Instance",
+                "isCorrect": false,
+                "id": "29694911-7c1b-5cb0-8ab8-82ba5520a485"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "fd0066a0-c89d-5c70-a57d-4cfe1f2f4ced"
+    },
+    {
+        "query": "Which of the following AWS Support plans provides access to Infrastructure Event Management for an additional fee?",
+        "options": [
+            {
+                "text": "Developer",
+                "isCorrect": false,
+                "id": "5903427c-fcdb-5681-8477-df038e4d63ff"
+            },
+            {
+                "text": "Enterprise",
+                "isCorrect": false,
+                "id": "fea2bbc9-e98f-58ec-8eb3-2f69c9119752"
+            },
+            {
+                "text": "Business",
+                "isCorrect": true,
+                "id": "39ef3192-2b1e-51bf-a839-087d3e9551ac"
+            },
+            {
+                "text": "Basic",
+                "isCorrect": false,
+                "id": "b59980af-51c8-5349-9384-9dc87f3dfebb"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "2568dae1-87e0-55fc-963a-93b3aa816303"
+    },
+    {
+        "query": "Which of the following AWS services manages account privileges?",
+        "options": [
+            {
+                "text": "AWS CloudTrail",
+                "isCorrect": false,
+                "id": "fc99f305-74c1-5d30-be2e-294701d76ff8"
+            },
+            {
+                "text": "AWS Web Application Firewall (WAF)",
+                "isCorrect": false,
+                "id": "0360d1d2-63c7-5808-b82a-fd866dbdf5a8"
+            },
+            {
+                "text": "AWS Secrets Manager",
+                "isCorrect": false,
+                "id": "ad52936b-fc7d-597f-bc7a-6870fd1ba1f4"
+            },
+            {
+                "text": "AWS Identity and Access Management (IAM)",
+                "isCorrect": true,
+                "id": "4617ad3e-b852-59de-bce7-63dc39ba9360"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "b642f799-f4c8-5422-a824-e319f5646aa1"
+    },
+    {
+        "query": "The AWS Well-Architected Framework helps organizations build robust Cloud solutions based on AWS recommended best practices. Which of the following are part of the five pillars mandated in the Well-Architected Framework (Select two)",
+        "options": [
+            {
+                "text": "Privacy",
+                "isCorrect": false,
+                "id": "b23b7146-0dd6-54d6-950d-a99f3be6b1bd"
+            },
+            {
+                "text": "Security",
+                "isCorrect": true,
+                "id": "dd5ae73f-bb6d-5dca-93dd-5e88a146eac3"
+            },
+            {
+                "text": "Configuration Management",
+                "isCorrect": false,
+                "id": "8fab1b8a-cec3-5254-9700-80c702a93cfa"
+            },
+            {
+                "text": "Performance Efficiency",
+                "isCorrect": true,
+                "id": "e13c58f6-b6a2-5292-a3f6-fa2a4e745211"
+            },
+            {
+                "text": "Scalability",
+                "isCorrect": false,
+                "id": "beb8cc7e-3169-5046-88c4-aebc5d681003"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "43aa0e01-53b1-5df3-9f65-bd248278ec95"
+    },
+    {
+        "query": "Which AWS EC2 pricing model is the most cost-effective and flexible with no requirement for a long term resource commitment or upfront payment but still guarantees that instance would not be interrupted?",
+        "options": [
+            {
+                "text": "On-demand Instances",
+                "isCorrect": true,
+                "id": "3b9fa3a0-7931-5e88-ac6a-adebd727a19a"
+            },
+            {
+                "text": "Reserved Instances",
+                "isCorrect": false,
+                "id": "ebd22b97-8aac-5918-ba28-9e9dbb5ea939"
+            },
+            {
+                "text": "Dedicated Hosts",
+                "isCorrect": false,
+                "id": "ad60a8f6-ac80-58a0-a839-693f9e6c73bf"
+            },
+            {
+                "text": "Spot Instances",
+                "isCorrect": false,
+                "id": "ac2027f6-fed3-537c-88cb-e73bc0232c60"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "6a9e185f-730f-5c3c-bfa7-2eadb57a21f5"
+    },
+    {
+        "query": "Which AWS service can be used to review the compliance and governance-related documents on AWS?",
+        "options": [
+            {
+                "text": "Secrets Manager",
+                "isCorrect": false,
+                "id": "f6addee3-b063-5d23-86e4-7a7ee0bc0201"
+            },
+            {
+                "text": "Trusted Advisor",
+                "isCorrect": false,
+                "id": "786cf82a-78da-5b55-ba5f-21ce45942820"
+            },
+            {
+                "text": "Artifact",
+                "isCorrect": true,
+                "id": "3ae811ea-e25e-5c3b-8da0-bd6399e79164"
+            },
+            {
+                "text": "Service Catalog",
+                "isCorrect": false,
+                "id": "b5bf9fa4-c154-5ffe-9158-04af65bf401e"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "2c9d2e6c-f2ee-542f-ba7a-aaefab59b458"
+    },
+    {
+        "query": "Multi AZ (Availability Zone) deployment is an example of which of the following?",
+        "options": [
+            {
+                "text": "Vertical Scaling",
+                "isCorrect": false,
+                "id": "b09ee74e-4171-5cfe-8035-cb178526b757"
+            },
+            {
+                "text": "Performance Efficiency",
+                "isCorrect": false,
+                "id": "dfd23ecd-04d4-53fd-93a3-cc96e452bd12"
+            },
+            {
+                "text": "High Availability",
+                "isCorrect": true,
+                "id": "039b414b-e86e-50d8-abd0-ae89cdce38f1"
+            },
+            {
+                "text": "Horizontal Scaling",
+                "isCorrect": false,
+                "id": "632a051b-13d7-57dd-8c8e-2c48c22ae88a"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "13f59d20-1d58-5fd5-9815-1727e0fb7f98"
+    },
+    {
+        "query": "A startup is looking for 24×7 phone based technical support for his AWS account. Which of the following is the MOST cost-effective AWS support plan for this use-case?",
+        "options": [
+            {
+                "text": "Basic",
+                "isCorrect": false,
+                "id": "f04de465-8ca0-57b9-b608-25321ed98ef3"
+            },
+            {
+                "text": "Developer",
+                "isCorrect": false,
+                "id": "02d564f0-c133-5043-92f8-3c3ab7a918ba"
+            },
+            {
+                "text": "Enterprise",
+                "isCorrect": false,
+                "id": "4c3fd2a3-8576-59a9-98a6-debbb43c2c75"
+            },
+            {
+                "text": "Business",
+                "isCorrect": true,
+                "id": "dc2ce5ad-b40a-5806-a599-150970a40fd8"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "cf4a0567-0ceb-5b5f-a73a-c83318c417b7"
+    },
+    {
+        "query": "Which AWS Route 53 routing policy would you use to improve the performance for your customers by routing the requests to the AWS endpoint that provides the fastest experience?",
+        "options": [
+            {
+                "text": "Latency routing policy",
+                "isCorrect": true,
+                "id": "5fafef90-a2f1-5b3e-b3b1-7ede831d24ce"
+            },
+            {
+                "text": "Weighted routing policy",
+                "isCorrect": false,
+                "id": "dc8873d9-201e-5aef-802f-e1cd0dab50bb"
+            },
+            {
+                "text": "Simple routing policy",
+                "isCorrect": false,
+                "id": "c9186b46-f373-530a-9ff4-b46956c2131c"
+            },
+            {
+                "text": "Failover routing policy",
+                "isCorrect": false,
+                "id": "1de09616-bdb4-5e83-9555-961024471d2e"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "5c38a696-17d6-5369-8b3d-236de8d64a02"
+    },
+    {
+        "query": "A customer has created a VPC and a subnet within AWS Cloud. Which of the following statements is correct?",
+        "options": [
+            {
+                "text": "A VPC spans all of the Availability Zones in the Region whereas a subnet spans only one Availability Zone in the Region",
+                "isCorrect": true,
+                "id": "26fc7983-99f4-5ffb-8fd9-872b08ce6738"
+            },
+            {
+                "text": "A subnet spans all of the Availability Zones in the Region whereas a VPC spans only one Availability Zone in the Region",
+                "isCorrect": false,
+                "id": "a134c031-e15d-5312-993f-3196cf3a17f4"
+            },
+            {
+                "text": "Both the VPC and the subnet span all of the Availability Zones in the Region",
+                "isCorrect": false,
+                "id": "a32b7b2e-065c-5172-bffd-39fa34b1c5f8"
+            },
+            {
+                "text": "Both the VPC and the subnet span only one Availability Zone in the Region",
+                "isCorrect": false,
+                "id": "db8519e5-6451-50c5-9ec8-50e99a3efbb2"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "3e4dc2f3-7747-5e25-802a-2feeb5667640"
+    },
+    {
+        "query": "Which service gives a personalized view of the status of the AWS services that are part of your Cloud architecture so that you can quickly assess the impact on your business when AWS service(s) are experiencing issues?",
+        "options": [
+            {
+                "text": "Amazon CloudWatch",
+                "isCorrect": false,
+                "id": "3efce926-fa48-5a35-99eb-0371004e05ea"
+            },
+            {
+                "text": "AWS Inspector",
+                "isCorrect": false,
+                "id": "682adf00-0325-500b-a4db-883f813d40b9"
+            },
+            {
+                "text": "AWS Personal Health Dashboard",
+                "isCorrect": true,
+                "id": "7255e6e2-5ff1-5fa3-9fc4-c9bf70255b2c"
+            },
+            {
+                "text": "AWS Service Health Dashboard",
+                "isCorrect": false,
+                "id": "5f3c91b0-818c-5c52-b3bd-0d15f78a38a9"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "7dcfd6b1-bff0-5313-85e6-144addbf762e"
+    },
+    {
+        "query": "Which AWS service can be used to store, manage, and deploy Docker container images?",
+        "options": [
+            {
+                "text": "Amazon EC2",
+                "isCorrect": false,
+                "id": "b97d72a5-9003-5faf-bdbc-dba5d727c5a5"
+            },
+            {
+                "text": "Amazon Elastic Container Service (ECS)",
+                "isCorrect": false,
+                "id": "66a98257-9e47-5ac9-948f-25d65ee21800"
+            },
+            {
+                "text": "Amazon Lambda",
+                "isCorrect": false,
+                "id": "f0a08a2a-9c88-5c59-998c-093ba42f9bbe"
+            },
+            {
+                "text": "Amazon Elastic Container Registry (ECR)",
+                "isCorrect": true,
+                "id": "64849143-01a1-5660-b4d7-751e6c517eb6"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "20f3d7bf-9e53-5893-bc4f-e13108099b4c"
+    },
+    {
+        "query": "Which AWS service publishes up-to-the-minute information on the general status and availability of all AWS services in all the Regions of AWS Cloud?",
+        "options": [
+            {
+                "text": "AWS Personal Health Dashboard",
+                "isCorrect": false,
+                "id": "598835f1-2e4e-5f99-a0dd-716637f11179"
+            },
+            {
+                "text": "Amazon CloudWatch",
+                "isCorrect": false,
+                "id": "4d354a53-8770-5b0f-b44e-b787e5fc1b53"
+            },
+            {
+                "text": "AWS Service Health Dashboard",
+                "isCorrect": true,
+                "id": "a267d294-3d1e-58ec-9053-fe07b4354e47"
+            },
+            {
+                "text": "AWS CloudFormation",
+                "isCorrect": false,
+                "id": "b00d694b-0ed9-5770-9096-f0525a8157aa"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "df821fb7-5490-5805-900d-fe746638e043"
+    },
+    {
+        "query": "A photo sharing web application wants to store thumbnails of user-uploaded images on Amazon S3. The thumbnails are rarely used but need to be immediately accessible from the web application. The thumbnails can be regenerated easily if they are lost. Which is the most cost-effective way to store these thumbnails on S3?",
+        "options": [
+            {
+                "text": "Use S3 One-Zone Infrequent Access (One-Zone IA) to store the thumbnails",
+                "isCorrect": true,
+                "id": "f24588ba-21b9-53a0-9d84-b1dd3bf13364"
+            },
+            {
+                "text": "Use S3 Standard to store the thumbnails",
+                "isCorrect": false,
+                "id": "9db96fbc-a18f-5e44-bea9-1a1b19a63070"
+            },
+            {
+                "text": "Use S3 Glacier to store the thumbnails",
+                "isCorrect": false,
+                "id": "9b2d3e61-89a5-5b60-8c5c-a0c3329447d0"
+            },
+            {
+                "text": "Use S3 Standard Infrequent Access (Standard-IA) to store the thumbnails",
+                "isCorrect": false,
+                "id": "0be031da-958b-569c-87a2-0e7a7cf00960"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "d3c5336c-299f-5776-8897-8c3818a1fb5a"
+    },
+    {
+        "query": "Due to regulatory and compliance reasons, an organization has deployed its entire IT infrastructure on its on-premises data center. How would you classify this deployment model?",
+        "options": [
+            {
+                "text": "Cloud",
+                "isCorrect": false,
+                "id": "38581d72-3f5f-5126-8230-041d4f12656b"
+            },
+            {
+                "text": "Hybrid",
+                "isCorrect": false,
+                "id": "97b4b401-673b-5669-a1c9-323a52394a1e"
+            },
+            {
+                "text": "Mixed",
+                "isCorrect": false,
+                "id": "d71189cd-6167-539e-a30e-5d6381a16e4d"
+            },
+            {
+                "text": "Private",
+                "isCorrect": true,
+                "id": "f9b3fd0b-e7a2-5b1f-a5fc-003dd407d182"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "cba6bef6-fecb-53f7-91cb-016283f91339"
+    },
+    {
+        "query": "What are the different gateway types supported by AWS Storage Gateway service?",
+        "options": [
+            {
+                "text": "Object Gateway, File Gateway and Block Gateway",
+                "isCorrect": false,
+                "id": "4ae5217e-501c-5390-a949-ad09c3b8b2ee"
+            },
+            {
+                "text": "Tape Gateway, File Gateway and Block Gateway",
+                "isCorrect": false,
+                "id": "fb93bf0e-af65-53c3-b428-4ced87e5e3b0"
+            },
+            {
+                "text": "Tape Gateway, Object Gateway and Volume Gateway",
+                "isCorrect": false,
+                "id": "b03325a2-da0a-5450-a4c4-8b359bd59a46"
+            },
+            {
+                "text": "Tape Gateway, File Gateway and Volume Gateway",
+                "isCorrect": true,
+                "id": "40741d40-079a-508e-b4c9-f6bf2e6df43f"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "1048fe14-25cc-546c-8e06-c12f68c09bf0"
+    },
+    {
+        "query": "Which of the following use-cases is NOT supported by Amazon Rekognition?",
+        "options": [
+            {
+                "text": "Label objects in a photo",
+                "isCorrect": false,
+                "id": "0792a910-8096-513a-a198-c660030ac78b"
+            },
+            {
+                "text": "Quickly resize photos to create thumbnails",
+                "isCorrect": true,
+                "id": "13931212-62b9-548c-85d5-54a9fd9a2da0"
+            },
+            {
+                "text": "Identify person in a photo",
+                "isCorrect": false,
+                "id": "3ff918fd-3a7d-577b-9fcf-360e38909551"
+            },
+            {
+                "text": "Detect text in a photo",
+                "isCorrect": false,
+                "id": "77f0b991-dca5-5521-97fd-9b78b7d6d5f2"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "c2a3a1a6-45df-5b9f-b6e5-fbe1bfdd4121"
+    },
+    {
+        "query": "Which AWS service should be used when you want to run container applications, but want to avoid the operational overhead of scaling, patching, securing, and managing servers?",
+        "options": [
+            {
+                "text": "Amazon Elastic Container Service (Amazon ECS)",
+                "isCorrect": false,
+                "id": "73d8d86f-83a9-5e37-9949-29de60d712f5"
+            },
+            {
+                "text": "AWS Fargate",
+                "isCorrect": true,
+                "id": "91c8bea1-2e2d-5057-877c-13e86b000972"
+            },
+            {
+                "text": "Amazon Elastic Compute Cloud (Amazon EC2)",
+                "isCorrect": false,
+                "id": "260cd3a0-b43a-5670-ad75-ce001d86a860"
+            },
+            {
+                "text": "AWS Lambda",
+                "isCorrect": false,
+                "id": "b104b9b7-c09d-5bf9-9525-83166ab675b5"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "aebe4965-98fc-58e2-ba9c-34103a02fec9"
+    },
+    {
+        "query": "The engineering team at an IT company wants to monitor the CPU utilization for its fleet of EC2 instances and send an email to the administrator if the utilization exceeds 80%. As a Cloud Practitioner, which AWS services would you recommend to build this solution? (Select two)",
+        "options": [
+            {
+                "text": "CloudWatch",
+                "isCorrect": true,
+                "id": "c03c623d-e1b7-57d9-8414-b04ce5d47b47"
+            },
+            {
+                "text": "Lambda",
+                "isCorrect": false,
+                "id": "d6b1f82f-fcef-533e-9bf7-05ebc961af3a"
+            },
+            {
+                "text": "SNS",
+                "isCorrect": true,
+                "id": "1b6af5fc-e69e-5cc8-8cf4-e5e6564786a3"
+            },
+            {
+                "text": "SQS",
+                "isCorrect": false,
+                "id": "43596576-ee04-57d3-8dd4-7e24c3bd486d"
+            },
+            {
+                "text": "CloudTrail",
+                "isCorrect": false,
+                "id": "bd4387a7-c3ca-52de-82f5-d8743f315699"
+            }
+        ],
+        "explanation": "Correct option:<br> Fault tolerance is achieved by Vertical Scaling<br> A “vertically scalable” system, is constrained to be running its processes on only one computer. In such systems, the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage. Fault tolerance is not possible on vertically scalable systems since a single instance is prone to failure.<br> Incorrect options:<br> Vertical Scaling implies you scale by adding more power (CPU, RAM) to your existing machine/node&nbsp;– A “vertically scalable” system runs on a single instance. Adding power is only possible through the addition of resources in the form of CPU, RAM, or storage to enhance performance.<br> Horizontal Scaling implies you scale by adding more instances to your existing pool of resources&nbsp;– A “horizontally scalable” system is one that can increase capacity by adding more computers to the system. Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.<br> Fault tolerance is achieved by Horizontal scaling&nbsp;– Horizontal scaling adds more instances to its existing pool to scale. This implies, there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example of horizontal scaling.<br> Reference:<br> <a href=\"https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html\" rel=\"nofollow ugc\" onclick=\"javascript:window.open('https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html', '_blank', 'noopener'); return false;\">https://wa.aws.amazon.com/wat.concept.horizontal-scaling.en.html</a>",
+        "id": "d8dc4215-ac75-5b59-b1ce-168debd0e5e4"
+    }
+]
