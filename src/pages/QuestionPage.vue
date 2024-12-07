@@ -1,9 +1,15 @@
 <template>
   <div class="q-py-md q-px-lg bg-white">
-    <q-btn flat round color="primary" icon="close" />
+    <div class="flex">
+      <p class="text-grey-6 text-weight-bold content-center q-ma-none">
+        Question {{ questionIndex + 1 }}
+      </p>
+      <q-space />
+      <q-btn flat round color="primary" icon="close" />
+    </div>
     <div class="q-px-sm">
       <small class="text-weight-light text-grey-9">
-        Question {{ questionIndex + 1 }} of {{ questionCount }}
+        Submited answers: {{ answerCount }} of {{ questionCount }}
       </small>
       <q-linear-progress size="lg" :value="progress" color="primary" rounded />
     </div>
@@ -87,12 +93,14 @@ onMounted(async () => {
 // It has the current question number, and the total number of questions
 const questionIndex = ref(0)
 const questionCount = computed(() => questions.value.length)
+
+const answerCount = computed(() => questions.value.filter((question) => question.answer).length)
 const progress = computed(() => {
-  if (!questionIndex.value || !questionCount.value) {
+  if (!answerCount.value || !questionCount.value) {
     return 0
   }
 
-  return questionIndex.value / (questionCount.value - 1)
+  return answerCount.value / (questionCount.value - 1)
 })
 
 const questionIndexIncrease = () => {
