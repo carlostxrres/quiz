@@ -55,7 +55,7 @@
       no-caps
     />
 
-    <p v-if="answer.is" class="q-px-sm text-grey-9" v-html="question.explanation"></p>
+    <p v-if="answer.is" class="q-px-sm q-mt-lg text-grey-9" v-html="question.explanation"></p>
   </main>
 </template>
 
