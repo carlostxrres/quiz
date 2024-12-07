@@ -50,6 +50,10 @@
         size="md"
         padding="sm"
         flat
+        :class="{
+          'is-answered': questions[questionIndex + offset].answer?.is,
+          'is-correct': questions[questionIndex + offset].answer?.isCorrect,
+        }"
       />
       <!-- Each has 3 states: undone, correct, incorrect -->
 
@@ -154,3 +158,25 @@ const handleAnswer = (answer) => {
 
 // When an answer is selected, send it to the parent component
 </script>
+
+<style>
+.is-answered {
+  position: relative;
+}
+
+.is-answered::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 80% 50%;
+  transform: translateX(-50%);
+  width: 0.2rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.is-answered.is-correct::after {
+  background-color: #4caf50;
+}
+</style>
