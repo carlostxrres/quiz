@@ -20,6 +20,7 @@
         class="progress"
         color="primary"
         track-color="negative"
+        animation-speed="500"
         rounded
       />
     </div>
