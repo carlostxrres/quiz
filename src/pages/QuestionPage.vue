@@ -26,6 +26,7 @@
         @click="questionIndex = 0"
         :disabled="questionIndex === 0"
         dense
+        size="sm"
       />
 
       <q-btn
@@ -36,16 +37,19 @@
         @click="questionIndexDecrease"
         :disabled="questionIndex === 0"
         dense
+        size="md"
       />
 
       <q-btn
         v-for="offset in paginationOffsets"
         :key="questionIndex + offset"
-        :flat="offset !== 0"
-        color="primary"
         :label="questionIndex + offset + 1"
         :disabled="offset === 0"
+        :color="offset === 0 ? 'grey-6' : 'primary'"
         @click="questionIndexSet(questionIndex + offset)"
+        size="md"
+        padding="sm"
+        flat
       />
       <!-- Each has 3 states: undone, correct, incorrect -->
 
@@ -57,6 +61,7 @@
         @click="questionIndexIncrease"
         :disabled="questionIndex === questionCount - 1"
         dense
+        size="md"
       />
 
       <q-btn
@@ -67,6 +72,7 @@
         @click="questionIndex = questionCount - 1"
         :disabled="questionIndex === questionCount - 1"
         dense
+        size="sm"
       />
     </div>
   </q-footer>
@@ -132,7 +138,7 @@ const isValidIndex = (index) => {
 const paginationOffsets = computed(() => {
   // To do: adjust based on window width
   // [-2, -1, 0, 1, 2]
-  return [-1, 0, 1].filter((offset) => isValidIndex(questionIndex.value + offset))
+  return [-2, -1, 0, 1, 2].filter((offset) => isValidIndex(questionIndex.value + offset))
 })
 
 // Here
