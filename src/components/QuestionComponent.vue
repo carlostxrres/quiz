@@ -120,6 +120,10 @@ const submitAnswer = () => {
 }
 </script>
 <style>
+.question-query {
+  font-size: 1.2rem;
+}
+
 .paragraph {
   line-height: 1.5rem;
 }
