@@ -88,7 +88,7 @@ onMounted(async () => {
 const questionIndex = ref(0)
 const questionCount = computed(() => questions.value.length)
 const progress = computed(() => {
-  if (!questionIndex.value || questionCount.value) {
+  if (!questionIndex.value || !questionCount.value) {
     return 0
   }
 
