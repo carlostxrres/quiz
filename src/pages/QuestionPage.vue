@@ -24,7 +24,7 @@
       />
     </div>
   </div>
-  <QuestionComponent :question="questions[questionIndex]" @answer="handleAnswer" />
+  <QuestionComponent :question="question" />
 
   <q-footer class="q-py-sm q-px-md bg-white flex flex-center flex-gap" elevated>
     <q-btn
@@ -45,7 +45,7 @@
       round
       color="primary"
       icon="chevron_left"
-      @click="questionIndexDecrease"
+      @click="decreaseQuestionIndex"
       :disabled="questionIndex === 0"
       dense
       size="md"
@@ -57,13 +57,13 @@
       :label="questionIndex + offset + 1"
       :disabled="offset === 0"
       :color="offset === 0 ? 'grey-6' : 'primary'"
-      @click="questionIndexSet(questionIndex + offset)"
+      @click="setQuestionIndex(questionIndex + offset)"
       size="md"
       padding="sm"
       flat
       :class="{
-        'is-answered': questions[questionIndex + offset].answer?.is,
-        'is-correct': questions[questionIndex + offset].answer?.isCorrect,
+        'is-answered': isQuestionAnswered(questionIndex + offset),
+        'is-correct': isQuestionCorrect(questionIndex + offset),
       }"
     />
     <!-- Each has 3 states: undone, correct, incorrect -->
@@ -73,7 +73,7 @@
       round
       color="primary"
       icon="chevron_right"
-      @click="questionIndexIncrease"
+      @click="increaseQuestionIndex"
       :disabled="questionIndex === questionCount - 1"
       dense
       size="md"
@@ -97,6 +97,7 @@
 <script setup>
 import QuestionComponent from 'src/components/QuestionComponent.vue'
 import { ref, onMounted, computed } from 'vue'
+import { useOngoingTestStore } from 'src/stores/ongoingTest'
 
 const questions = ref([{}])
 const error = ref(null)
@@ -115,8 +116,32 @@ onMounted(async () => {
 // It has the current question number, and the total number of questions
 const questionIndex = ref(0)
 const questionCount = computed(() => questions.value.length)
+const question = computed(() => questions.value[questionIndex.value])
 
-const answerCount = computed(() => questions.value.filter((question) => question.answer).length)
+const ongoingTestStore = useOngoingTestStore()
+
+const isQuestionAnswered = (questionIndex) => {
+  const targetQuestion = questions.value[questionIndex]
+  if (!targetQuestion) {
+    return false
+  }
+
+  const targetQuestionId = targetQuestion.id
+  return ongoingTestStore.getIsAnswered(targetQuestionId)
+}
+
+const isQuestionCorrect = (questionIndex) => {
+  const targetQuestion = questions.value[questionIndex]
+  if (!targetQuestion) {
+    return false
+  }
+
+  const targetQuestionId = targetQuestion.id
+  return ongoingTestStore.getIsCorrect(targetQuestionId)
+}
+
+const answerCount = computed(() => ongoingTestStore.getAnswerCount())
+
 const answerCountProgress = computed(() => {
   if (!answerCount.value || !questionCount.value) {
     return 0
@@ -125,9 +150,7 @@ const answerCountProgress = computed(() => {
   return answerCount.value / (questionCount.value - 1)
 })
 
-const correctCount = computed(
-  () => questions.value.filter((question) => question.answer?.isCorrect).length,
-)
+const correctCount = computed(() => ongoingTestStore.getCorrectCount())
 const correctCountProgress = computed(() => {
   if (!questionCount.value || !correctCount.value) {
     return 0
@@ -136,19 +159,20 @@ const correctCountProgress = computed(() => {
   return correctCount.value / (questionCount.value - 1)
 })
 
-const questionIndexIncrease = () => {
+// Manage question index
+const increaseQuestionIndex = () => {
   if (questionIndex.value < questionCount.value) {
     questionIndex.value++
   }
 }
 
-const questionIndexDecrease = () => {
+const decreaseQuestionIndex = () => {
   if (questionIndex.value > 0) {
     questionIndex.value--
   }
 }
 
-const questionIndexSet = (index) => {
+const setQuestionIndex = (index) => {
   if (index < 0) {
     questionIndex.value = 0
   } else if (index >= questionCount.value) {
@@ -164,22 +188,11 @@ const isValidIndex = (index) => {
 
 const paginationOffsets = computed(() => {
   // To do: adjust based on window width
-  // [-2, -1, 0, 1, 2]
-  return [-2, -1, 0, 1, 2].filter((offset) => isValidIndex(questionIndex.value + offset))
+  // [-3, -2, -1, 0, 1, 2, 3]
+  return [-2, -1, 0, 1, 2].filter((offset) =>
+    isValidIndex(questionIndex.value + offset),
+  )
 })
-
-// Here
-// Props:
-// question
-
-const handleAnswer = (answer) => {
-  console.log(answer)
-  // to do: post to server
-
-  questions.value[questionIndex.value].answer = answer
-}
-
-// When an answer is selected, send it to the parent component
 </script>
 
 <style>

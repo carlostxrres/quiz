@@ -1,6 +1,8 @@
 <template>
   <main class="q-px-md">
-    <p class="q-px-md text-weight-bold question-query">{{ question.query }}</p>
+    <p class="q-px-md text-weight-bold question-query">
+      {{ question.query }}
+    </p>
 
     <q-list>
       <q-item
@@ -11,22 +13,38 @@
         v-ripple
       >
         <q-item-section avatar>
-          <q-radio
-            v-model="selectedOption"
+          <q-checkbox
+            v-if="isMultipleChoice"
+            v-model="selectedOptionIds"
             :val="option.id"
-            @update:model-value="onOptionSelection"
-            :disable="answer.is"
-            :color="answer.is && option.isCorrect ? 'positive' : 'primary'"
+            :disable="
+              !selectedOptionIds.includes(option.id) &&
+              selectedOptionIds.length >= correctOptionsCount
+            "
             keep-color
           />
+
+          <q-radio
+            v-else
+            v-model="selectedOptionIds"
+            :val="option.id"
+            :color="answered && option.isCorrect ? 'positive' : 'primary'"
+            :disable="answered"
+            keep-color
+          />
+
           <!-- To do: disable this when the  -->
         </q-item-section>
+
         <q-item-section>
           <q-item-label
-            :style="{ color: answer.is && option.isCorrect ? 'var(--q-positive)' : 'inherit' }"
+            :style="{
+              color:
+                answered && option.isCorrect ? 'var(--q-positive)' : 'inherit',
+            }"
             >{{ option.text }}</q-item-label
           >
-          <!-- <q-item-label caption>With description </q-item-label> -->
+          <!-- <q-item-label caption>Description </q-item-label> -->
         </q-item-section>
       </q-item>
     </q-list>
@@ -37,33 +55,31 @@
       v-html="question.explanation"
     ></p>
 
-    <!-- <SubmitAnswerButton /> 
-
-    <p>
-      correct:
-      {{ question && question.options.find((option) => option.isCorrect).id }}
-    </p>
-    <p>isSubmitted: {{ submission.is }}</p>
-    <p>isAnswerCorrect: {{ submission.isCorrect }}</p>
-    -->
-
     <q-btn
-      class="full-width"
+      v-if="!answered"
+      class="full-width q-mb-lg"
       label="Submit"
       color="primary"
-      v-if="!answer.is"
-      :disabled="!selectedOption"
+      :disabled="!isSelectionCountCorrect"
       @click="submitAnswer"
       no-caps
     />
-    <q-tooltip v-model="shouldShowTooltip">Please select an option to submit</q-tooltip>
 
-    <p v-if="answer.is" class="q-px-sm q-mt-lg text-grey-9" v-html="question.explanation"></p>
+    <!-- 
+    <q-tooltip v-model="shouldShowTooltip">Please select an option to submit</q-tooltip>
+    -->
+
+    <p
+      v-if="answered"
+      class="q-px-sm q-mt-lg text-grey-9"
+      v-html="question.explanation"
+    ></p>
   </main>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
+import { useOngoingTestStore } from 'src/stores/ongoingTest'
 
 const props = defineProps({
   question: {
@@ -72,53 +88,76 @@ const props = defineProps({
   },
 })
 
-// Define the emit function
-const emit = defineEmits(['answerSelected'])
+// Get if this question is multiple choice
+const correctOptionsCount = computed(() => {
+  const { options } = props.question
+  if (!options) {
+    return 1
+  }
 
-const selectedOption = ref('')
+  return options.filter((option) => option.isCorrect).length
+})
+const isMultipleChoice = computed(() => correctOptionsCount.value > 1)
 
-// Emit the selected option to the parent component
-const onOptionSelection = (option) => {
-  emit('optionSelection', option)
-}
+// Handle the selection of the options
+const ongoingTestStore = useOngoingTestStore()
+const selectedOptionIds = computed({
+  get: () => {
+    const valueInStore = ongoingTestStore.getSelectionIds(props.question.id)
+    return isMultipleChoice.value ? valueInStore : valueInStore[0] || ''
+  },
+  set: (selected) => {
+    const valueToSet = isMultipleChoice.value ? selected : [selected]
+    ongoingTestStore.setSelection(props.question.id, valueToSet, false)
+  },
+})
+// Handle the submission of the answer
+const answered = computed(() =>
+  ongoingTestStore.getIsAnswered(props.question.id),
+)
 
-const defaultAnswer = {
-  is: false,
-  isCorrect: false,
-}
-const answer = computed(() => props.question.answer || defaultAnswer)
+const correctOptions = computed(
+  () => props.question?.options?.filter((option) => option.isCorrect) ?? [],
+)
 
-const shouldShowTooltip = ref(false)
-const showTooltip = () => {
-  shouldShowTooltip.value = true
-  setTimeout(() => {
-    shouldShowTooltip.value = false
-  }, 2000)
+const selectedAnswersCount = computed(() => {
+  if (isMultipleChoice.value) {
+    return selectedOptionIds.value.length
+  } else {
+    return selectedOptionIds.value ? 1 : 0
+  }
+})
+
+const isSelectionCountCorrect = computed(
+  () => selectedAnswersCount.value === correctOptionsCount.value,
+)
+
+const getIsCorrect = () => {
+  const correctOptionIds = correctOptions.value.map((option) => option.id)
+
+  if (isMultipleChoice.value) {
+    const normalize = (arr) => [...arr.sort()].join('')
+    return normalize(selectedOptionIds.value) === normalize(correctOptionIds)
+  } else {
+    return selectedOptionIds.value === correctOptionIds[0]
+  }
 }
 
 const submitAnswer = () => {
-  const didUserSelect = props.question.options.some((option) => option.id === selectedOption.value)
+  // Check if the user has selected an option
+  // to do: check that the user selected _all_ options (1 or 2)
 
-  if (!didUserSelect) {
-    showTooltip()
+  if (!isSelectionCountCorrect.value) {
+    // to do: user feedback
     return
   }
 
-  const correctAnswer = props.question.options.find((option) => option.isCorrect)
-  if (!correctAnswer) {
-    // to do: handle error
-    return
-  }
-
-  const newAnswer = {
-    is: true,
-    isCorrect: selectedOption.value === correctAnswer.id,
-  }
-  answer.value = newAnswer
-
-  emit('answer', newAnswer)
+  // Update the store
+  const isCorrect = getIsCorrect()
+  ongoingTestStore.setAsAnswered(props.question.id, isCorrect)
 }
 </script>
+
 <style>
 .question-query {
   font-size: 1.2rem;
