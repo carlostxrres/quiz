@@ -59,6 +59,7 @@
       @click="submitAnswer"
       no-caps
     />
+    <q-tooltip v-model="shouldShowTooltip">Please select an option to submit</q-tooltip>
 
     <p v-if="answer.is" class="q-px-sm q-mt-lg text-grey-9" v-html="question.explanation"></p>
   </main>
@@ -90,7 +91,22 @@ const defaultAnswer = {
 }
 const answer = computed(() => props.question.answer || defaultAnswer)
 
+const shouldShowTooltip = ref(false)
+const showTooltip = () => {
+  shouldShowTooltip.value = true
+  setTimeout(() => {
+    shouldShowTooltip.value = false
+  }, 2000)
+}
+
 const submitAnswer = () => {
+  const didUserSelect = props.question.options.some((option) => option.id === selectedOption.value)
+
+  if (!didUserSelect) {
+    showTooltip()
+    return
+  }
+
   const correctAnswer = props.question.options.find((option) => option.isCorrect)
   if (!correctAnswer) {
     // to do: handle error
