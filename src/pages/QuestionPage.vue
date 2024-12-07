@@ -8,10 +8,20 @@
       <q-btn flat round color="primary" icon="close" />
     </div>
     <div class="q-px-sm">
-      <small class="text-weight-light text-grey-9">
-        Submited answers: {{ answerCount }} of {{ questionCount }}
+      <small class="text-weight-light text-grey-9 flex">
+        {{ correctCount }} correct answers of {{ answerCount }} submitted
+        <q-space />
+        {{ questionCount }} questions
       </small>
-      <q-linear-progress size="lg" :value="progress" color="primary" rounded />
+      <q-linear-progress
+        size="lg"
+        :value="correctCountProgress"
+        :buffer="answerCountProgress"
+        class="progress"
+        color="primary"
+        track-color="negative"
+        rounded
+      />
     </div>
   </div>
   <QuestionComponent :question="questions[questionIndex]" @answer="handleAnswer" />
@@ -105,12 +115,23 @@ const questionIndex = ref(0)
 const questionCount = computed(() => questions.value.length)
 
 const answerCount = computed(() => questions.value.filter((question) => question.answer).length)
-const progress = computed(() => {
+const answerCountProgress = computed(() => {
   if (!answerCount.value || !questionCount.value) {
     return 0
   }
 
   return answerCount.value / (questionCount.value - 1)
+})
+
+const correctCount = computed(
+  () => questions.value.filter((question) => question.answer?.isCorrect).length,
+)
+const correctCountProgress = computed(() => {
+  if (!questionCount.value || !correctCount.value) {
+    return 0
+  }
+
+  return correctCount.value / (questionCount.value - 1)
 })
 
 const questionIndexIncrease = () => {
@@ -178,5 +199,13 @@ const handleAnswer = (answer) => {
 
 .is-answered.is-correct::after {
   background-color: #4caf50;
+}
+.progress::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-color: #bebebe;
+  opacity: 0.2;
 }
 </style>
