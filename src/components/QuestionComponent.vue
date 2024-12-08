@@ -10,12 +10,6 @@
       :answered="answered"
     />
 
-    <FeedbackMessage
-      v-if="question.isSubmitted && question.isSubmittedCorrectly"
-      :message="question.explanation"
-      class="q-px-sm q-mt-sm text-grey-8"
-    />
-
     <SubmitButton
       v-if="!answered"
       :disabled="!isSelectionCountCorrect"
