@@ -1,5 +1,8 @@
 <template>
-  <QuestionPageHeader :question-count="questionCount" />
+  <QuestionPageHeader
+    :question-count="questionCount"
+    :question-index="questionIndex"
+  />
   <QuestionComponent :question="question" />
   <QuestionPagePagination
     :question-count="questionCount"

@@ -33,6 +33,7 @@ import { useOngoingTestStore } from 'src/stores/ongoingTest'
 
 const props = defineProps({
   questionCount: { type: Number, required: true },
+  questionIndex: { type: Number, required: true },
 })
 
 const ongoingTestStore = useOngoingTestStore()
