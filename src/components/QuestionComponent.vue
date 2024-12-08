@@ -65,7 +65,13 @@ const selectedOptionIds = computed({
   },
   set: (selected) => {
     const valueToSet = isMultipleChoice.value ? selected : [selected]
-    ongoingTestStore.setSelection(props.question.id, valueToSet, false)
+    // ongoingTestStore.setSelection(props.question.id, valueToSet, false)
+
+    // Only update the store if the value has changed
+    const currentSelection = ongoingTestStore.getSelectionIds(props.question.id)
+    if (JSON.stringify(currentSelection) !== JSON.stringify(valueToSet)) {
+      ongoingTestStore.setSelection(props.question.id, valueToSet, false)
+    }
   },
 })
 
@@ -112,4 +118,10 @@ const submitAnswer = () => {
   const isCorrect = getIsCorrect()
   ongoingTestStore.setAsAnswered(props.question.id, isCorrect)
 }
+
+// // I realized selectedOptionIds sometimes has a peak of updates,
+// // so something might have recursive. Checking here:
+// watch(selectedOptionIds, () => {
+//   console.log('selectedOptionIds changed')
+// })
 </script>
