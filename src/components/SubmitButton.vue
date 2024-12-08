@@ -1,6 +1,6 @@
 <template>
   <q-btn
-    class="full-width q-mb-lg"
+    class="full-width q-mt-md q-mb-lg"
     label="Submit"
     color="primary"
     :disabled="disabled"
