@@ -130,15 +130,12 @@ const isQuestionCorrect = (questionIndex) => {
 }
 
 // paginationOffsets
-const isValidIndex = (index) => {
-  return index >= 0 && index < props.questionCount
-}
+const isValidIndex = (index) => index >= 0 && index < props.questionCount
 const paginationOffsets = computed(() => {
   // To do: adjust based on window width
-  // [-3, -2, -1, 0, 1, 2, 3]
-  return [-2, -1, 0, 1, 2].filter((offset) =>
-    isValidIndex(props.questionIndex + offset),
-  )
+  // For instance: [-4, -3, -2, -1, 0, 1, 2, 3, 4]
+  const offsets = [-2, -1, 0, 1, 2]
+  return offsets.filter((offset) => isValidIndex(props.questionIndex + offset))
 })
 </script>
 
